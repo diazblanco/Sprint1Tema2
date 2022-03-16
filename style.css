@@ -1,0 +1,149 @@
+* {margin: 0;padding:0;} /*reseteo valores por defecto*/
+/*///////////////Desktop///////////////*/
+body {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+}
+/*Estilos generales para los contenedores*/
+.wrap1 {
+    width: 100%,auto;
+    margin: 10px;
+    margin-bottom: 0;
+    background-color: black;
+    padding: 10px;
+}
+.wrap2 {
+    padding: 10px;
+}
+.wrap3 {
+    width: 100%;
+    height: 10px;
+}
+/*Estilos para el contenedor header*/
+header {
+    display: flex;
+    flex-direction: column;
+}
+#mainHeader {
+    background: teal;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#titHeader {
+    margin-top: 10px;
+    background: orange;
+}
+#logo, #rrss {
+    width: 10%;
+    background: coral;
+}
+#nav {
+    margin-right: 2%;
+    margin-left: 2%;
+    width: 80%;
+    background: coral;
+}
+#pTitHeader {
+    background: yellow;  
+}
+/*Estilos para el contenedor main*/
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#mainIzq {
+    width: 80%;
+    background: darkslateblue;
+}
+#mainArticle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.articleContent {
+    width: 48%;
+    background: midnightblue;
+}
+.uno {
+    margin-bottom: 10px;
+}
+#articleFoot {
+    background: cornflowerblue;
+    margin-top: 10px;
+}
+#mainDrch {
+    width: 20%;
+    background: tomato;
+    margin-left: 10px;
+}
+.asideContent {
+    background: gold;
+}
+aside p:first-child {
+    margin-bottom: 10px;
+}
+/*Estilos para el contenedor footer*/
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+#foot {
+    background: goldenrod;
+}
+
+/*///////////////Tablet///////////////*/
+@media only screen and (max-width: 992px){
+    #mainWrap {
+        background: yellow;
+        flex-direction: column;
+    }
+    #mainIzq, #mainDrch {
+        width: 100%;
+        margin-left: 0px;
+        padding: 0;
+    }
+    main article {
+        margin-bottom: 10px;
+    }
+    #mainArticle {
+        margin: 10px;
+    }
+    #articleFoot {
+        margin: 10px;
+        width: auto;
+    }
+    .asideContent {
+        margin: 10px;
+        width: auto;
+    }
+
+}
+
+/*///////////////Phone///////////////*/
+@media only screen and (max-width: 600px){
+    .wrap1, .wrap2, .wrap3, #mainHeader, #mainArticle {
+        display: flex;
+        flex-direction: column;
+    }
+    #logo, #nav, #rrss, .articleContent {
+        width: 100%;
+    }
+    #nav {
+        margin-left: 0;
+    }
+    #logo, #nav, .articleContent, .asideContent {
+        margin-bottom: 10px;
+    }
+    .cuatro {
+        margin-bottom: 0px;
+    }
+    #articleFoot, #asideContent2{
+        margin-top: 0;
+    }
+
+}
