@@ -48,7 +48,7 @@ header {
     height: 80px;
 }
 #logo img {
-    height: 100%;
+    width: 100%;
 }
 nav {
     margin-right: 10%;
@@ -91,8 +91,8 @@ a img:hover{
 #titHeader {
     /* margin-top: 10px; */
     height: 70px;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
     background: rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: center;
@@ -180,18 +180,45 @@ footer {
 
 /*///////////////Phone///////////////*/
 @media only screen and (max-width: 600px){
+    #headerId {
+        background-position:top;
+    }
     .wrap1, .wrap2, .wrap3, #mainHeader, #mainArticle {
         display: flex;
         flex-direction: column;
     }
+    #logo {
+        display: flex;
+        align-items: center;
+        height: 60px;
+    }
+    #logo img {
+        width: 15%;
+    }
+    /* ul {
+        display: block;
+    } */
     #logo, #nav, #rrss, .articleContent {
         width: 100%;
     }
     #nav {
         margin-left: 0;
+        width: 100%;
     }
-    #logo, #nav, .articleContent, .asideContent {
+    a {
+        font-size: 0.6em;
+    }
+    a img {
+        width: 10px;
+        margin-right: 5px;
+        margin-top:0px;
+    }
+
+    #nav, .articleContent, .asideContent {
         margin-bottom: 10px;
+    }
+    #pTitHeader {
+        font-size: 1em;  
     }
     .cuatro {
         margin-bottom: 0px;
