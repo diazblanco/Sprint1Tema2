@@ -6,11 +6,21 @@ body {
     flex-direction: column;
 }
 /*Estilos generales para los contenedores*/
+#headerId {
+    width: 100%, auto;
+    height: 200px;
+    margin: 10px;
+    margin-bottom: 0;
+    padding: 10px;
+    background-image: url("img/header.jpg");
+    background-size: cover;
+    background-position: center;
+}
 .wrap1 {
     width: 100%,auto;
     margin: 10px;
     margin-bottom: 0;
-    background-color: black;
+    background-color: lightgrey;
     padding: 10px;
 }
 .wrap2 {
