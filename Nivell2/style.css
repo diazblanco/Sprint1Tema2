@@ -11,7 +11,7 @@ body {
     height: 200px;
     margin: 10px;
     margin-bottom: 0;
-    padding: 10px;
+    /* padding: 10px; */
     background-image: url("img/header.jpg");
     background-size: cover;
     background-position: center;
@@ -34,6 +34,7 @@ body {
 header {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 #mainHeader {
     /* margin-top: 3%; */
@@ -84,12 +85,22 @@ a {
 a:hover {
     color: black;
 }
+a img:hover{
+    opacity: 100%;
+}
 #titHeader {
-    margin-top: 10px;
-    background: orange;
+    /* margin-top: 10px; */
+    height: 70px;
+    margin-left: 10%;
+    margin-right: 10%;
+    background: rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
 }
 #pTitHeader {
-    background: yellow;  
+    margin-top: 2%;
+    color: rgba(238, 133, 95, 0.8);
+    font-size: 1.5em;  
 }
 /*Estilos para el contenedor main*/
 main {
